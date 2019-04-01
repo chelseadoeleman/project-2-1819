@@ -6,7 +6,6 @@ const path = require('path')
 const compression = require('compression')
 const { decompress } = require('./helpers/decompress')
 const handleIndexRoute = require('./routes/indexRoute')
-const handleDetailRoute = require('./routes/detailRoute')
 const app = express()
 
 app.use(helmet())
@@ -27,8 +26,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 app.get('/', handleIndexRoute)
-app.get('/detail/:id', handleDetailRoute)
 
-app.listen({ port: process.env.PORT || 3000 }), () => {
-    console.log(`listening on port ${process.env.PORT || 3000}`)
+app.listen({ port: process.env.PORT || 5000 }), () => {
+    console.log(`listening on port ${process.env.PORT || 5000}`)
 }
