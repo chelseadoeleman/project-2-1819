@@ -1,11 +1,6 @@
 # | Project 2 | Valtech_ | Volkswagen |
 
-**Here I improved the performance of my application which uses images from Unsplash, to create a better user experience. Mainly by switching from client to server side rendering with Express**
-
-[Link to website](https://unsplash-slider.herokuapp.com/)
-
-![Unsplash slider](./docs/unsplash.png)
-
+**Description coming soon**
 
 ## Table of Contents
 * **[How to install](#how-to-install)** 
