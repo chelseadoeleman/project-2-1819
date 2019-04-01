@@ -1,0 +1,93 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Unsplash slider with mapbox">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#a6bedd">
+<link rel="icon" href="/images/icons/icon-384x384.png" type="x-icon"/>
+<style>
+    body {
+        overflow-x: hidden;
+        display: flex;
+        font-family: Georgia;
+        font-size: 17px;
+        line-height: 1.5;
+        font-weight: 300;
+        letter-spacing: 0.15px;
+        word-spacing: 0px;
+        color: #2b2b2b;
+        background-color: #F2F2F2;
+    }
+
+    .font-loaded {
+        font-family: "prata-regular";
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+
+    main {
+        overflow-x: hidden;
+        flex-direction: column;
+        display: flex;
+        flex: 1;
+        margin-bottom: 2em;
+    }
+
+    h1 {
+        margin: 1em .5em -1em 1em;
+        margin-bottom: .5em;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 2em; 
+        background-color: #2b2b2b;
+        font-size: 2em;
+        color: white;
+    }
+
+    section {
+        display: flex;
+        margin: 0 auto;
+        flex: 1 0;
+    }
+
+    .image-wrapper {
+        margin-top: 3.75em;
+        display: flex;
+        flex-direction: column;
+        min-width: 35vw;
+        max-height: 71vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .photos {
+        display: flex;
+        overflow: auto;
+        overflow-y: hidden;
+        max-height: 95vh;
+        width: 53vw;
+        margin: 0 2em;
+    }
+
+    img {
+        object-fit: cover;
+        margin: 0 -2em;
+        margin-bottom: 1em;
+        justify-content: center;
+        flex-direction: row;
+        display: block;
+        flex-shrink: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<link rel="stylesheet" href="../css/index.css">
+<title>Unsplash photos</title>

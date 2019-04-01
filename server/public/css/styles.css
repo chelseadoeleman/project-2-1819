@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "prata-regular";
+    font-display: swap;
+    src: url("../fonts/Prata-Regular.woff2") format("woff2")
+}
+
+* {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    color: inherit;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-size: inherit;
+    cursor: pointer;
+}
+
+ol, ul {
+    padding: 0;
+    list-style: none;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}   
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.link {
+    padding: .75em;
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+}
+
+.link:hover,
+.link:focus {
+    padding: .75em;
+    background-color:rgb(166, 190, 221);
+    color: #2b2b2b;
+    transition: all 200ms ease-in-out;
+}
+
+
+.searchBox {
+    padding: .5em;
+    position: absolute;
+    z-index: 5;
+    min-width: 40%;
+    height: 3.5em;
+    top: 5%;
+    right: 2%;
+}
+
+.searchBox:focus {
+    background-color:rgb(166, 190, 221);
+    color: #2b2b2b;
+    transition: all 200ms ease-in-out;
+}
+
+section ul {
+    position: relative;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul li {
+    margin: .3em;
+    font-size: 1.5em;
+    z-index: 4;
+    color: #2b2b2b;
+}
+
+.detail-image-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detail-image-wrapper > * {
+    margin: initial;
+}
+
+.detail-image-wrapper .head-image {
+    margin: 2em 0;
+    max-width: 80%;
+    height: auto;
+}
+
+.detail-image-wrapper .user {
+    margin-right: 2em;
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.no-images {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    z-index: 5;
+    color: rgb(166, 190, 221);
+    font-size: 2em;
+    font-weight: bold;
+}
