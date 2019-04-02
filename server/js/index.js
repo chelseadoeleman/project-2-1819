@@ -9,6 +9,10 @@ const handleIndexRoute = require('./routes/indexRoute')
 const app = express()
 
 app.use(helmet())
+
+app.get('*.js', decompress)
+app.get('*.css', decompress)
+
 app.use(express.static(path.join(__dirname, '../public')))
 app.use(compression({
     filter: (request) => {
@@ -19,14 +23,12 @@ app.use(compression({
     }
 }))
 
-app.get('*.js', decompress)
-app.get('*.css', decompress)
-
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 app.get('/', handleIndexRoute)
 
 app.listen({ port: process.env.PORT || 5000 }), () => {
+    process.on('SIGTERM')
     console.log(`listening on port ${process.env.PORT || 5000}`)
 }

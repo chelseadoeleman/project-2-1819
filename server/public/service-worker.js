@@ -13,22 +13,6 @@ self.addEventListener('install', event => {
     )
 })
 
-// self.addEventListener('activate', event => {
-//     const cacheWhitelist = ['core-cache'];
-
-//     event.waitUntil(
-//       caches.keys().then(function(cacheNames) {
-//         return Promise.all(
-//           cacheNames.map(function(cacheName) {
-//             if (cacheWhitelist.indexOf(cacheName) === -1) {
-//               return caches.delete(cacheName)
-//             }
-//           })
-//         )
-//       })
-//     )
-// })
-
 
 self.addEventListener('fetch', event => {
     if (event.request.mode === 'navigate'
@@ -58,6 +42,33 @@ self.addEventListener('fetch', event => {
                 })
             })
         )
+    // } else if(event.request.mode === 'navigate'
+    //     || (event.request.method === 'GET'
+    //         && event.request.headers.get('accept').includes('image/png')
+    //     )
+    // ) { 
+    //     event.respondWith(fetch(event.request.url)
+    //     .then(response => {
+    //         return caches.open('image-cache').then(cache => {
+    //             return cache.put(event.request.url, response.clone()).then(() => {
+    //                 return response
+    //             })
+    //         })
+    //     })
+    //     .catch(error => {
+    //         return caches.open('image-cache').then(cache => {
+    //             return cache.match(event.request.url).then(response => {
+    //                 return response 
+    //                     ? response
+    //                     : caches.open('core-cache').then(cache => {
+    //                         return cache.match('/offlinePage.html').then(response => {
+    //                             return response
+    //                         })
+    //                     })
+    //             })
+    //         })
+    //     })
+    // )
     } else {
         event.respondWith(
             caches

@@ -2,6 +2,8 @@ const decompress = (request, response, next) => {
     const encoding = request.headers['accept-encoding']
     const extensionIndex = request.originalUrl.lastIndexOf('.')
     const extension = request.originalUrl.slice(extensionIndex)
+
+    console.log(encoding)
     
     if (encoding) {
         if (encoding.includes('br')) {

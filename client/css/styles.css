@@ -1359,6 +1359,7 @@
  @font-face {
      font-family: VWHeadWeb;
      src: url(../fonts/VWHeadWeb-Light.woff2) format("woff2"), url(../fonts/VWHeadWeb-Light.woff) format("woff");
+     font-display: swap;
      font-weight: 300;
      font-style: normal
  }
@@ -1366,6 +1367,7 @@
  @font-face {
      font-family: VWHeadWeb;
      src: url(../fonts/VWHeadWeb-Regular.woff2) format("woff2"), url(../fonts/VWHeadWeb-Regular.woff) format("woff");
+     font-display: swap;
      font-weight: 400;
      font-style: normal
  }
@@ -1373,6 +1375,7 @@
  @font-face {
      font-family: VWHeadWeb;
      src: url(../fonts/VWHeadWeb-RegularItalic.woff2) format("woff2"), url(../fonts/VWHeadWeb-RegularItalic.woff) format("woff");
+     font-display: swap;
      font-weight: 400;
      font-style: italic
  }
@@ -1380,6 +1383,7 @@
  @font-face {
      font-family: VWHeadWeb;
      src: url(../fonts/VWHeadWeb-Bold.woff2) format("woff2"), url(../fonts/VWHeadWeb-Bold.woff) format("woff");
+     font-display: swap;
      font-weight: 700;
      font-style: normal
  }
@@ -1387,6 +1391,7 @@
  @font-face {
      font-family: VWHeadWeb;
      src: url(../fonts/VWHeadWeb-BoldItalic.woff2) format("woff2"), url(../fonts/VWHeadWeb-BoldItalic.woff) format("woff");
+     font-display: swap;
      font-weight: 700;
      font-style: italic
  }
@@ -1394,6 +1399,7 @@
  @font-face {
      font-family: VWHeadWeb;
      src: url(../fonts/VWHeadWeb-ExtraBold.woff2) format("woff2"), url(../fonts/VWHeadWeb-ExtraBold.woff) format("woff");
+     font-display: swap;
      font-weight: 800;
      font-style: normal
  }
@@ -1401,6 +1407,7 @@
  @font-face {
      font-family: VWTextWeb;
      src: url(../fonts/VWTextWeb-Regular.woff2) format("woff2"), url(../fonts/VWTextWeb-Regular.woff) format("woff");
+     font-display: swap;
      font-weight: 400;
      font-style: normal
  }
@@ -1408,6 +1415,7 @@
  @font-face {
      font-family: VWTextWeb;
      src: url(../fonts/VWTextWeb-RegularItalic.woff2) format("woff2"), url(../fonts/VWTextWeb-RegularItalic.woff) format("woff");
+     font-display: swap;
      font-weight: 400;
      font-style: italic
  }
@@ -1415,6 +1423,7 @@
  @font-face {
      font-family: VWTextWeb;
      src: url(../fonts/VWTextWeb-Bold.woff2) format("woff2"), url(../fonts/VWTextWeb-Bold.woff) format("woff");
+     font-display: swap;
      font-weight: 700;
      font-style: normal
  }
@@ -1422,6 +1431,7 @@
  @font-face {
      font-family: VWTextWeb;
      src: url(../fonts/VWTextWeb-BoldItalic.woff2) format("woff2"), url(../fonts/VWTextWeb-BoldItalic.woff) format("woff");
+     font-display: swap;
      font-weight: 700;
      font-style: italic
  }
