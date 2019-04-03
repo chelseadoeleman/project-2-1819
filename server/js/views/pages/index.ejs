@@ -117,7 +117,7 @@
                     <div class="o-column mobile-navigation-block__navigation-column">
                         <nav class="mobile-navigation-block__primary-navigation">
                             <a href="/" class="mobile-navigation-block__primary-navigation-link">
-                                <img  class="o-icon mobile-navigation-block__primary-navigation-link-home-icon" src="../assets/images/logo__image.svg" alt="vw-pkw">
+                                <img class="o-icon mobile-navigation-block__primary-navigation-link-home-icon" src="../assets/images/logo__image.svg" alt="vw-pkw">
                                 <span>Home</span>
                             </a>
                             <a href="/modellen" class="mobile-navigation-block__primary-navigation-link js-track-click">
@@ -207,7 +207,8 @@
                 <div class="image-wrapper">
                     <img  
                         width="507"
-                        style="background-color:#6778a5" 
+                        height="500"
+                        style="background-color:#00b1eb" 
                         data-srcset="https://stocklandmartelblog.files.wordpress.com/2015/05/uwe-duettmann_volkswagen-3.jpg" 
                         srcset="https://stocklandmartelblog.files.wordpress.com/2015/05/uwe-duettmann_volkswagen-3.jpg" 
                         alt="Volkswagen Economy Service" 
@@ -259,6 +260,7 @@
                                 <div class="m-tile">
                                     <a href="/acties/business" class="m-tile__anchor">
                                         <img  
+                                            style="background-color:#00b1eb" 
                                             data-src="https://www.volkswagen.nl/-/media/vwpkw/images/acties/fast-start-2019/fast_start_2400x1350.ashx" 
                                             sizes="100vw"
                                             data-srcset="https://www.volkswagen.nl/-/media/vwpkw/images/acties/fast-start-2019/fast_start_2400x1350.ashx" 
@@ -292,6 +294,7 @@
                                 <div class="m-tile">
                                     <a href="https://www.vwbedrijfswagens.nl/nl/ontdek-en-koop/acties.html" class="m-tile__anchor" target=_blank>
                                         <img  
+                                            style="background-color:#00b1eb" 
                                             data-src="https://www.volkswagen.nl/-/media/vwpkw/images/homepage/tile-module/1200x1200-vwnl-verschil-moet-er-zijn.ashx" 
                                             sizes="100vw"
                                             data-srcset="" 
@@ -322,6 +325,7 @@
                                 <div class="m-tile">
                                     <a href="/snelwegsprookjes" class="m-tile__anchor" target=_blank>
                                         <img  
+                                            style="background-color:#00b1eb"
                                             data-src="https://www.volkswagen.nl/-/media/vwpkw/images/snelwegsprookjes/snelwegsprookjes_thumbnail.ashx" 
                                             sizes="100vw"
                                             data-srcset="https://www.volkswagen.nl/-/media/vwpkw/images/snelwegsprookjes/snelwegsprookjes_thumbnail.ashx" 
@@ -356,6 +360,7 @@
                                 <div class="m-tile">
                                     <a href="/passat-2019" class="m-tile__anchor">
                                         <img  
+                                            style="background-color:#00b1eb" 
                                             data-src="https://www.volkswagen.nl/-/media/vwpkw/images/modellen/passat/passat_tile.ashx" 
                                             sizes="100vw"
                                             data-srcset="https://www.volkswagen.nl/-/media/vwpkw/images/modellen/passat/passat_tile.ashx" 
@@ -386,6 +391,7 @@
                                 <div class="m-tile">
                                     <a href="/elektrisch-rijden" class="m-tile__anchor">
                                         <img  
+                                            style="background-color:#00b1eb" 
                                             data-src="https://www.volkswagen.nl/-/media/vwpkw/images/homepage/tile-module/elektrisch-rijden-11.ashx" 
                                             sizes="100vw"
                                             data-srcset="https://www.volkswagen.nl/-/media/vwpkw/images/homepage/tile-module/elektrisch-rijden-11.ashx" 
@@ -419,6 +425,7 @@
                                 <div class="m-tile">
                                     <a href="http://www.volkswagen.nl/nieuws/volkswagen-golf-wordt-45-ruim-35-miljoen-golfs-and-still-counting/" class="m-tile__anchor" target=_new>
                                         <img  
+                                            style="background-color:#00b1eb" 
                                             data-src="https://presspage-production-content.s3.amazonaws.com/uploads/1397/500_golf1-536821.jpg?10000" 
                                             sizes="100vw"
                                             data-srcset="https://presspage-production-content.s3.amazonaws.com/uploads/1397/500_golf1-536821.jpg?10000" 
@@ -895,8 +902,8 @@
                                                         <use xlink:href="/dist/vw-pkw/Icons/icons.svg#license-plate-dutch-country-code"></use>
                                                     </svg>
                                                 </div>
-                                                <label for="licensePlate">Vul hier je kenteken in</label>
-                                                <input type="text" name="licensePlate" class="c-license-plate__input js-c-license-plate__input js-my-license-plate-modal__license-plate-input--insert" placeholder="12-AB-CD, 12-ABC-1- of AB-123-A" maxlength="8">
+                                                <label id="licensePlate" for="licensePlate">Vul hier je kenteken in</label>
+                                                <input type="text" id="licensePlate" name="licensePlate" class="c-license-plate__input js-c-license-plate__input js-my-license-plate-modal__license-plate-input--insert" placeholder="12-AB-CD, 12-ABC-1- of AB-123-A" maxlength="8">
                                             </div>
                                         </div>
                                         <span class="c-error-notification">Voer alsjeblieft een geldig kenteken in</span>

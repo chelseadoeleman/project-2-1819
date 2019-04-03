@@ -8973,6 +8973,19 @@
  .header-block__secondary-navigation-link:hover {
     color: #0851C5;
  }
+
+ .header-block__secondary-navigation-link {
+    background-color: #41494c;
+ }
+
+ .header-block__secondary-navigation-link span {
+    color: #fff;
+ }
+
+ .header-block__secondary-navigation-link:hover, 
+ .header-block__secondary-navigation-link:focus{
+    color: #0851C5;
+ }
  
  .header-block__menu-button .o-icon,
  .header-block__secondary-navigation-link .o-icon {
