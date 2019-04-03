@@ -26,6 +26,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "helmet": "^3.16.0",
+    "intersection-observer": "^0.5.1",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {

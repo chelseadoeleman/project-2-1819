@@ -3,7 +3,7 @@ const CORE_ASSETS = [
     '/css/index.css',
     '/js/index.js',
     '/offlinePage.html'
- ]
+]
 
 self.addEventListener('install', event => {
     event.waitUntil(
