@@ -8,6 +8,7 @@ const { decompress } = require('./helpers/decompress')
 const handleIndexRoute = require('./routes/indexRoute')
 const app = express()
 
+
 app.use(helmet())
 
 app.get('*.js', decompress)
@@ -36,3 +37,4 @@ app.listen({ port: process.env.PORT || 5000 }), () => {
     process.on('SIGTERM')
     console.log(`listening on port ${process.env.PORT || 5000}`)
 }
+
