@@ -51,9 +51,11 @@ Precrompression (Static compression) saves a lot of time, over compressing files
 Brotli has a better compression ratio than gzip, for example an Javascript file compressed with gzip can be 14% bigger than if it were compressed with brotli. As of now not all browsers support brotli **.br** files, so gzip can be used as an fallback. Compressing files can save up to 10%-25%.
 
 
+
 ### Service worker
 
 The service worker can cache files such as javascript, css and even webfonts. This means that when the user has a bad connection or is offline the user is still able to use the webpage. You can even cache a custom offline page so when the user is offline and there wasn't anything cached yet they are able to view that custom page. It is even possible to store images offline, although storing large images is ill advised. For the sake of this demo though I did store some images in the service worker.
+
 
 
 ### First paint
@@ -63,9 +65,11 @@ Perceived performance is important for the user, so while the page is still load
 Another thing that is important for the first view is making sure the textual content is visible during font-load. Because volkswagen have their own font, this can be loaded with ```font-display: swap;```. This way while the font is loading the user is able to view the content faster, eventhough it is not rightly styled yet. Another important thing is to apply a fallback font. This was already done in the website.
 
 
+
 ### Compress images with WebP
 
 The are a lot of large images loaded in the website, which take up a lot of load time. Volkswagen already used some sort of image lazy loading, which makes sure the load time is defered. However by compressing the images with WebP, the images will be a lot smaller. This reduces load time and cellular data. WebP is not largely supported yet, but other next-gen formats will also save up a lot of load time. I think will save the largest bulk while loading the webpage, because this can save up to 10 seconds.
+
 
 
 ### Improve Accessability
@@ -73,6 +77,7 @@ The are a lot of large images loaded in the website, which take up a lot of load
 The accessability was not bad on the website. I could almost access every link with a screenreader, eventhough sometimes more information could be provided e.g **Lees meer**. After running an audit the most prominent thing that came forward, was that there wasn't enough contrast provided between the background and foreground. This was an easy fix. Focus styles also weren't applied everywhere, which is also important for the user when navigating through the page. The main problem was that HTML was not completely written semantically. Such as no labels provided for an input element or multiple id's.
 
 Now there is enough color contrast between colors for people who are colorblind to discern. Though all the images can't be controlled the text over the images is still quite readable, maybe testing can give more insight into this matter.
+
 
 
 ## Learning process
