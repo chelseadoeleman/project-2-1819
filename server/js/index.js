@@ -22,6 +22,10 @@ app.use(compression({
         return false
     }
 }))
+app.use((request, response, next) => {
+    response.setHeader('Cache-Control', 'max-age=' + 365 * 24 * 60 * 60)
+    next()
+})
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))

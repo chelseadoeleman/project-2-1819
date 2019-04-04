@@ -1670,7 +1670,10 @@
  .m-action-card-module.is-current .c-button--primary,
  .m-action-card-module:focus .c-button--primary,
  .m-action-card-module:hover .c-button--primary {
-     background-color: #69cdee
+    background-color: #69cdee;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.2);
  }
  
  .c-button--primary-alt {
@@ -1711,11 +1714,11 @@
      color: #fff
  }
  
- .c-button--secondary.is-current,
+ /* .c-button--secondary.is-current,
  .c-button--secondary:focus,
  .c-button--secondary:hover {
      background-color: #1f689b
- }
+ } */
  
  .c-button--secondary-alt {
      background-color: #c1ddff;
@@ -3000,7 +3003,6 @@
  
 .m-button-group__buttons .c-button:focus,
 .m-button-group__buttons .c-button:hover{
-    font-size: 1.05em;
     color: #0851C5;
 }
 
@@ -3054,6 +3056,7 @@
  
  @media screen and (min-width:48em) {
      .m-button-group--grid-variant .m-button-group__button {
+         padding-bottom: 1em;
          width: 20%
      }
  
@@ -3098,10 +3101,12 @@
      height: 4.5em;
      vertical-align: -1.2em;
      fill: #00b1eb;
+     background-color: #1a363f;
+     border-radius: 50%;
      margin-top: -.33333em;
      margin-bottom: .33333em
  }
- 
+  
  .m-button-group--grid-variant .m-button-group__button>span {
      width: 100%;
      text-align: center
@@ -3113,8 +3118,11 @@
      }
  }
  
- .m-button-group--grid-variant .m-button-group__button:hover {
-     text-decoration: underline
+ .m-button-group--grid-variant .m-button-group__button:hover,
+ .m-button-group--grid-variant .m-button-group__button:focus {
+    text-decoration: none;
+    color: #0851C5;
+    text-shadow: 1px 1px rgba(0, 0, 0, .15)
  }
  
  .m-button-group--grid-variant .m-button-group__button em,
@@ -4724,16 +4732,18 @@
      width: 100%
  }
 
+ .o-column .grid-layout-block__inner-column--square:focus,
+ .o-column .grid-layout-block__inner-column--square:hover {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.2);
+ }
+
  .m-tile__anchor:focus,
  .m-tile__anchor:hover {
      transform: scale(1.05);
  }
 
- .m-tile__content:focus,
- .m-tile__content:hover {
-     color: #6cc9e7;
- }
- 
  .m-tile {
      overflow: hidden;
      position: relative
