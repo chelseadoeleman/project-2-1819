@@ -2,6 +2,8 @@
 
 **In this application I did some research on methods to improve the performance and accessability for [Volkswagen](https://www.volkswagen.nl/) through [Valtech_](https://www.valtech.com/nl-nl/) and tried to implement this within a certain timespan.**
 
+![volkswagen.nl](./docs/volkswagen.png)
+
 ## Table of Contents
 * **[How to install](#how-to-install)** 
 * **[Walktrough the application](#walk-trough-the-application)** 
