@@ -6,12 +6,8 @@
 
 ## Table of Contents
 * **[How to install](#how-to-install)** 
-* **[Walktrough the application](#walk-trough-the-application)** 
-* **[Performance features](#performance-features)**
-* **[Service worker](#service-worker)**
-* **[Learning process](#learning-process)**
+* **[Proof of concept](#walk-trough-the-application)** 
 * **[Resources](#resources)**
-* **[Checklist](#checklist)**
 * **[License](#license)**
 
 ## How to install
@@ -148,10 +144,6 @@ In the end I changed the colors like so to provide more contrast.
 **Semantic HTML**
 
 ![semantic](./docs/semantic.png)
-
-
-
-## Learning process
 
 
 ## Resources
