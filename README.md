@@ -137,6 +137,14 @@ Eventhough it's not completely clear who the users are while doing research maki
 
 ![contrast colors](./docs/contrast.png)
 
+**Test contrast**
+This is the result after a contrast test. Styling can be changed by the designer to provide more contrast, but this can be an option if approved by the design team.
+
+![test](./docs/test.png)
+
+In the end I changed the colors like so to provide more contrast.
+![application](./docs/vw-website.png)
+
 **Semantic HTML**
 
 ![semantic](./docs/semantic.png)
