@@ -53,7 +53,7 @@ This was how the volkswagen website scored on an audit test with slow 3G
 
 ![audit](./docs/3g.png)
 
-In Internet Explorer 8 the website completely breaks, this is also something that could be done better. So the site will be accessable for everyone. This can be done by feature detection in Javascript and Css. 
+In Internet Explorer 8 the website completely breaks, this is also something that could be done better. So the site will be accessable for everyone. This can be done by feature detection in Javascript and Css. There are also some depricated API's used in the website.
 
 ![internet explorer 8](./docs/ie8.png)
 
@@ -102,7 +102,16 @@ I also gave the images an background-color, so the user will see the outline of 
 
 **After font swap**
 
-![critical css](./docs/font-swap.png)
+![font swap](./docs/font-swap.png)
+
+
+**First paint Volkswagen index page**
+
+![vw first paint](./docs/vw-paint.png)
+
+**First paint Demo index page**
+
+![demo first paint](./docs/first-paint.png)
 
 
 ### Compress images with WebP
@@ -130,7 +139,7 @@ Eventhough it's not completely clear who the users are while doing research maki
 
 **Semantic HTML**
 
-![contrast colors](./docs/semantic.png)
+![semantic](./docs/semantic.png)
 
 
 
